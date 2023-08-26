@@ -1,0 +1,29 @@
+/* Add the styles for the navbar links and hover effect */
+.nav-link {
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+    padding-bottom: 4px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color:	#E30B5C; 
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition: transform 0.3s;
+  }
+  
+ 
+  
+  .nav-link:hover::after {
+    transform: scaleX(1);
+  }
+  
