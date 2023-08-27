@@ -6,7 +6,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
+
 const Work = () => {
+
   useEffect(() => {
     AOS.init({
       offset: 300,
@@ -26,7 +28,7 @@ const Work = () => {
             data-aos="fade-right"
           >
             <img
-              src="src/assets/project-spotify.PNG"
+              src='/project-spotify.PNG'
               alt="none"
               className="w-[10px] md:w-full"
             />
@@ -112,7 +114,7 @@ const Work = () => {
             data-aos="fade-left"
           >
             <img
-              src="src/assets/recipe-project.PNG"
+              src="/recipe-project.PNG"
               alt="none"
               className=""
             />
