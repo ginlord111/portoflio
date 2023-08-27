@@ -5,10 +5,9 @@ import {PiBowlFoodFill} from 'react-icons/pi'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-
-
+import spotifyImage from '/src/assets/projectSpotify.png';
+import recipeImage from '/src/assets/recipeProject.png';
 const Work = () => {
-
   useEffect(() => {
     AOS.init({
       offset: 300,
@@ -28,9 +27,10 @@ const Work = () => {
             data-aos="fade-right"
           >
             <img
-              src='/project-spotify.PNG'
+              src={spotifyImage}
               alt="none"
               className="w-[10px] md:w-full"
+      
             />
           </div>
           <div
@@ -114,7 +114,7 @@ const Work = () => {
             data-aos="fade-left"
           >
             <img
-              src="/recipe-project.PNG"
+              src={recipeImage}
               alt="none"
               className=""
             />
