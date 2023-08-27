@@ -9,7 +9,7 @@ const Navbar = () => {
   const handleClick = () => setNav(navi => !navi);
 
   return (
-    <div className="fixed w-screen md:w-full  h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 ">
+    <div className="fixed w-screen md:w-full  h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-[800] border-b-2 border-black">
       <p className='text-xl md:text-2xl font-bold '>&lt;ron.dev/&gt;</p>
       <div>
         <ul className="hidden md:flex">

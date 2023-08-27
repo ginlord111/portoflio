@@ -14,22 +14,22 @@ const Work = () => {
     });
   }, []);
   return (
-    <div className="w-full h-fit bg-[#0a192f] text-gray-300 " id="work">
+    <div className="w-full h-fit bg-[#0a192f] text-gray-300 z-[-1] " id="work">
       {/*/SPOTIFY CLONE*/}
       <div className="flex flex-col justify-center items-center w-full h-full gap-4">
         <h3 className="font-semibold text-xl text-white">Works</h3>
         <h2 className="text-blue-400 font-semibold text-2xl">
           Projects that i develop
         </h2>
-        <div className="flex  w-[70%] items-center justify-center p-5  gap-[30px] mb-[300px]">
+        <div className="flex  flex-col md:flex-row w-[70%] items-center justify-center p-5 gap-[30px] mb-[300px]">
           <div
-            className="flex items-center truncate flex-[0.50] justify-center relative"
+            className="flex items-center  flex-[0.50] justify-center"
             data-aos="fade-right"
           >
             <img
               src={spotifyImage}
               alt="none"
-              className="w-[10px] md:w-full"
+              className="w-full"
       
             />
           </div>
@@ -72,9 +72,9 @@ const Work = () => {
         </div>
 
         {/*/RECIPE PROJECT*/}
-        <div className="flex  w-[70%] items-center justify-center p-5  gap-[30px] mt-[40px]">
+        <div className="flex  md:flex-row flex-col-reverse w-[70%] items-center justify-center p-5  gap-[30px] mt-[40px]">
           <div
-            className="flex flex-col flex-[0.50] justify-between max-w-[400px] gap-[2.5em]"
+            className="flex flex-col  flex-[0.50] justify-between max-w-[400px] gap-[2.5em]"
             data-aos="fade-right"
           >
             <h2 className="text-white font-semibold h-full">
