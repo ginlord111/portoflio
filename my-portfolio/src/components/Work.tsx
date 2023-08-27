@@ -26,7 +26,7 @@ const Work = () => {
             data-aos="fade-right"
           >
             <img
-              src="./src/assets/project-spotify.PNG"
+              src="src/assets/project-spotify.PNG"
               alt="none"
               className="w-[10px] md:w-full"
             />
@@ -112,7 +112,7 @@ const Work = () => {
             data-aos="fade-left"
           >
             <img
-              src="./src/assets/recipe-project.PNG"
+              src="src/assets/recipe-project.PNG"
               alt="none"
               className=""
             />
