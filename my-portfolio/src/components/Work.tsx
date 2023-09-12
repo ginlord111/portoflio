@@ -1,12 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
-import { FaGithub, FaShareSquare, } from "react-icons/fa";
-import {PiBowlFoodFill} from 'react-icons/pi'
+import { FaGithub, FaShareSquare } from "react-icons/fa";
+import { PiBowlFoodFill } from "react-icons/pi";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import spotifyImage from '/src/assets/projectSpotify.png';
-import recipeImage from '/src/assets/recipeProject.png';
+import spotifyImage from "/src/assets/projectSpotify.png";
+import recipeImage from "/src/assets/recipeProject.png";
+import askEinsteinWeb from "/src/assets/ask-einstein-pic.png";
+import einsteinIcon from "/src/assets/einstein.png";
+import {AiFillYoutube} from 'react-icons/ai'; 
 const Work = () => {
   useEffect(() => {
     AOS.init({
@@ -21,23 +24,18 @@ const Work = () => {
         <h2 className="text-blue-400 font-semibold text-2xl">
           Projects that i develop
         </h2>
-        <div className="flex  flex-col md:flex-row w-[70%] items-center justify-center p-5 gap-[30px] mb-[300px]">
+        <div className="flex  flex-col md:flex-row w-[70%] items-center justify-center p-5 gap-[100px] mb-[300px]">
           <div
             className="flex items-center  flex-[0.50] justify-center"
             data-aos="fade-right"
           >
-            <img
-              src={spotifyImage}
-              alt="none"
-              className="w-full"
-      
-            />
+            <img src={spotifyImage} alt="none" className="w-full" />
           </div>
           <div
             className="flex flex-col flex-[0.50] justify-between max-w-[400px] gap-[2.5em]"
             data-aos="fade-left"
           >
-            <h2 className="text-green-400 font-semibold h-full">
+            <h2 className="text-green-400 font-semibold h-full text-xl">
               Spotify Clone <FontAwesomeIcon icon={faSpotify} size="xl" />
             </h2>
             <p className="text-base text-gray-400 font-semibold">
@@ -61,8 +59,10 @@ const Work = () => {
                   Live Demo <FaShareSquare className="inline-block" size={24} />
                 </p>
               </a>
-              <a href="https://github.com/ginlord111/REACT-NEXT-JS.git"  target="_blank">
-               
+              <a
+                href="https://github.com/ginlord111/REACT-NEXT-JS.git"
+                target="_blank"
+              >
                 <p>
                   Code <FaGithub className="inline-block" size={25} />
                 </p>
@@ -72,13 +72,14 @@ const Work = () => {
         </div>
 
         {/*/RECIPE PROJECT*/}
-        <div className="flex  md:flex-row flex-col-reverse w-[70%] items-center justify-center p-5  gap-[30px] mt-[40px]">
+        <div className="flex  md:flex-row flex-col-reverse w-[70%] items-center justify-center p-5  gap-[100px] mt-[40px]">
           <div
             className="flex flex-col  flex-[0.50] justify-between max-w-[400px] gap-[2.5em]"
             data-aos="fade-right"
           >
-            <h2 className="text-white font-semibold h-full">
-              Recipe Website <PiBowlFoodFill size={25} className="inline-block"/>
+            <h2 className="text-white font-semibold h-full text-xl">
+              Recipe Website{" "}
+              <PiBowlFoodFill size={30} className="inline-block" />
             </h2>
             <p className="text-base text-gray-400 font-semibold">
               Recipe Website is a dynamic recipe-sharing website where users can
@@ -94,15 +95,15 @@ const Work = () => {
               <p>Mongo DB</p>
             </div>
             <div className="flex gap-[30px] text-white font-bold text-lg cursor-pointer">
-              <a
-                href="https://recipe-secret.netlify.app/"
-                target="_blank"
-              >
+              <a href="https://recipe-secret.netlify.app/" target="_blank">
                 <p>
                   Live Demo <FaShareSquare className="inline-block" size={24} />
                 </p>
               </a>
-              <a href="https://github.com/ginlord111/recipe-website.git" target="_blank">
+              <a
+                href="https://github.com/ginlord111/recipe-website.git"
+                target="_blank"
+              >
                 <p>
                   Code <FaGithub className="inline-block" size={25} />
                 </p>
@@ -113,11 +114,64 @@ const Work = () => {
             className="flex items-center truncate flex-[0.50] justify-center relative"
             data-aos="fade-left"
           >
-            <img
-              src={recipeImage}
-              alt="none"
-              className=""
-            />
+            <img src={recipeImage} alt="none" className="" />
+          </div>
+        </div>
+
+        {/*/ASK-EINSTEIN */}
+        <div className="flex  md:flex-row flex-col-reverse w-[70%] items-center justify-center p-5  gap-[100px] mt-[300px]">
+       
+          <div
+            className="flex items-center truncate lg:flex-[0.50]  justify-center relative"
+            data-aos="fade-right"
+          >
+           <img src={askEinsteinWeb} alt="none" className="" />
+          </div>
+          <div
+            className="flex flex-col  flex-[0.50] justify-between max-w-[400px] gap-[2.5em]"
+            data-aos="fade-left"
+          >
+            <div className="flex gap-x-3">
+              <h2 className="text-gray-400 font-semibold h-full text-xl">
+                Ask-Einstein
+              </h2>
+              <img src={einsteinIcon} alt="none" className="w-7 h-7" />
+            </div>
+            <p className="text-base text-gray-400 font-semibold">
+              "Ask Einstein is a website that utilizes the OpenAI API to
+              generate conversations, code snippets, and images for the video
+              and music generators. Unfortunately, I cannot afford the premium
+              plan to continue offering this service on the website. Similarly,
+              Vercel's hobby plan only allows for API responses within a maximum
+              of 10 seconds. Therefore, I have created a YouTube video
+              demonstrating its full functionality instead."
+            </p>
+            <div className="flex gap-[30px] text-white font-bold">
+              <p>Next Js</p>
+              <p>Tailwind</p>
+              <p>Supabase</p>
+              <p>Prisma</p>
+            </div>
+            <div className="flex gap-[30px] text-white font-bold text-lg cursor-pointer">
+              <a href="https://ask-einstein.vercel.app/" target="_blank">
+                <p>
+                  Live Demo <FaShareSquare className="inline-block" size={24} />
+                </p>
+              </a>
+              <a
+                href="https://github.com/ginlord111/ask-einsteinv2.git"
+                target="_blank"
+              >
+                <p>
+                  Code <FaGithub className="inline-block" size={25} />
+                </p>
+              </a>
+              <a href="https://youtu.be/PqELbS5Tlxw" target="_blank">
+                <p>
+                  Video <AiFillYoutube className="inline-block" size={25}/>
+                </p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
