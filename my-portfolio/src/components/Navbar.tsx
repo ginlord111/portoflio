@@ -7,7 +7,7 @@ import './Navbar.css';
 const Navbar = () => {
   const [nav, setNav] = React.useState<boolean>(true);
   const handleClick = () => setNav(nav => !nav);
-console.log(nav)
+
   return (
     <div className="fixed w-screen md:w-full  h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-[800] border-b-2 border-black">
       <p className='text-xl md:text-2xl font-bold '>&lt;ron.dev/&gt;</p>

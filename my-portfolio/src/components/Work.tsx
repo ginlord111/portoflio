@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 import { FaGithub, FaShareSquare } from "react-icons/fa";
 import { PiBowlFoodFill } from "react-icons/pi";
-import AOS from "aos";
+import AOS, { AosEvent } from 'aos'; 
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import spotifyImage from "/src/assets/projectSpotify.png";
@@ -15,7 +15,21 @@ const Work = () => {
     AOS.init({
       offset: 300,
     });
+    document.addEventListener('aos:in', handleAOSIn);
+
+    return () => {
+      document.removeEventListener('aos:in', handleAOSIn);
+    };
   }, []);
+  const handleAOSIn = (event: AosEvent | any) => {
+    const animatedElement = event.detail;
+    const animatedChild = animatedElement.querySelector('.animated') as HTMLElement;
+    if (animatedChild) {
+      animatedChild.classList.add('opacity-100');
+    }
+    animatedElement.removeAttribute('data-aos');
+  };
+
   return (
     <div className="w-full h-fit bg-[#0a192f] text-gray-300 z-[-1] " id="work">
       {/*/SPOTIFY CLONE*/}
