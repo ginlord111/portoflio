@@ -25,7 +25,7 @@ const SideBar = () => {
           </a>
         </li>
         <li className="w-[160px] ml-[-100px] hover:ml-[1px] bg-[#565f69] duration-300 px-15 py-2 rounded-sm">
-          <a href="https://drive.google.com/file/d/1MusRHApT2iw86rDGUnDJBVf6MPuLZJcD/view?usp=sharing" target='_blank' className="flex justify-between items-center">
+          <a href="https://drive.google.com/file/d/1T3qf20k1nXDNz4JAnhpUe9EhuHm4_TOb/view?usp=drive_link" target='_blank' className="flex justify-between items-center">
             Resume <BsFillPersonLinesFill size={30} />
           </a>
         </li>
