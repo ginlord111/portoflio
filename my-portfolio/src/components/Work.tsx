@@ -9,6 +9,7 @@ import spotifyImage from "/src/assets/projectSpotify.png";
 import recipeImage from "/src/assets/recipeProject.png";
 import askEinsteinWeb from "/src/assets/ask-einstein-pic.png";
 import einsteinIcon from "/src/assets/einstein.png";
+import folderDriveIcon from "/src/assets/folder-picture-iconn.png";
 import {AiFillYoutube} from 'react-icons/ai'; 
 const Work = () => {
   useEffect(() => {
@@ -187,7 +188,64 @@ const Work = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div> 
+
+        {/* FOLDER DRIVE */}
+        <div className="flex  md:flex-row flex-col-reverse w-[70%] items-center justify-center p-5  gap-[100px] mt-[300px]">
+       
+       <div
+         className="flex items-center truncate lg:flex-[0.50]  justify-center relative"
+         data-aos="fade-right"
+       >
+        <img src={askEinsteinWeb} alt="none" className="" />
+       </div>
+       <div
+         className="flex flex-col  flex-[0.50] justify-between max-w-[400px] gap-[2.5em]"
+         data-aos="fade-left"
+       >
+         <div className="flex gap-x-3">
+           <h2 className="text-yellow-200 font-semibold h-full text-xl">
+             Folder Drive
+           </h2>
+           <img src={folderDriveIcon} alt="none" className="w-7 h-7" />
+         </div>
+         <p className="text-base text-gray-400 font-semibold">
+           "Ask Einstein is a website that utilizes the OpenAI API to
+           generate conversations, code snippets, and images for the video
+           and music generators. Unfortunately, I cannot afford the premium
+           plan to continue offering this service on the website. Similarly,
+           Vercel's hobby plan only allows for API responses within a maximum
+           of 10 seconds. Therefore, I have created a YouTube video
+           demonstrating its full functionality instead."
+         </p>
+         <div className="flex gap-[30px] text-white font-bold">
+           <p>Next Js</p>
+           <p>Tailwind</p>
+           <p>Supabase</p>
+           <p>Prisma</p>
+         </div>
+         <div className="flex gap-[30px] text-white font-bold text-lg cursor-pointer">
+           <a href="https://ask-einstein.vercel.app/" target="_blank">
+             <p>
+               Live Demo <FaShareSquare className="inline-block" size={24} />
+             </p>
+           </a>
+           <a
+             href="https://github.com/ginlord111/ask-einsteinv2.git"
+             target="_blank"
+           >
+             <p>
+               Code <FaGithub className="inline-block" size={25} />
+             </p>
+           </a>
+           <a href="https://youtu.be/PqELbS5Tlxw" target="_blank">
+             <p>
+               Video <AiFillYoutube className="inline-block" size={25}/>
+             </p>
+           </a>
+         </div>
+       </div>
+     </div> 
       </div>
     </div>
   );
