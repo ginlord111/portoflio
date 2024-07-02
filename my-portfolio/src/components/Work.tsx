@@ -70,7 +70,7 @@ const Work = () => {
             </div>
             <div className="flex gap-[30px] text-white font-bold text-lg cursor-pointer">
               <a
-                href="https://clone-spotify-pend6f3po-ginlord111.vercel.app/"
+                href="https://clone-spotify-ronn.vercel.app/"
                 target="_blank"
               >
                 <p>
