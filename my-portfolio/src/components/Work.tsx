@@ -90,51 +90,7 @@ const Work = () => {
         </div>
 
         {/*/RECIPE PROJECT*/}
-        <div className="flex  md:flex-row flex-col-reverse w-[70%] items-center justify-center p-5  gap-[100px] mt-[40px]">
-          <div
-            className="flex flex-col  flex-[0.50] justify-between max-w-[400px] gap-5"
-            data-aos="fade-right"
-          >
-            <h2 className="text-white font-semibold h-full text-xl">
-              Recipe Website{" "}
-              <PiBowlFoodFill size={30} className="inline-block" />
-            </h2>
-            <p className="text-base text-gray-400 font-semibold">
-              Recipe Website is a dynamic recipe-sharing website where users can
-              register, log in, and contribute their favorite recipes. The
-              platform goes beyond the ordinary recipe website by enabling users
-              to not only upload recipes but also share their unique cooking
-              experiences through engaging descriptions and mouthwatering
-              images.
-            </p>
-            <div className="flex gap-[30px] text-white font-bold">
-              <p>React</p>
-              <p>Tailwind</p>
-              <p>Mongo DB</p>
-            </div>
-            <div className="flex gap-[30px] text-white font-bold text-lg cursor-pointer">
-              <a href="https://recipe-secret.netlify.app/" target="_blank">
-                <p>
-                  Live Demo <FaShareSquare className="inline-block" size={24} />
-                </p>
-              </a>
-              <a
-                href="https://github.com/ginlord111/recipe-website.git"
-                target="_blank"
-              >
-                <p>
-                  Code <FaGithub className="inline-block" size={25} />
-                </p>
-              </a>
-            </div>
-          </div>
-          <div
-            className="flex items-center truncate flex-[0.50] justify-center relative"
-            data-aos="fade-left"
-          >
-            <img src={recipeImage} alt="none" className="" />
-          </div>
-        </div>
+  
 
         {/*/ASK-EINSTEIN */}
         <div className="flex  md:flex-row flex-col-reverse w-[70%] items-center justify-center p-5  gap-[100px] mt-[300px]">
