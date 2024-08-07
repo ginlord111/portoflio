@@ -13,9 +13,10 @@ const Home = () => {
           <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
             <ReactTyped
               strings={[
-                'Aspiring Front-end Developer',
+                'Front-end Developer',
                 'Frontend Engineer',
                 'React Developer',
+                'Vue Developer',
               ]}
               typeSpeed={100}
               backSpeed={100}

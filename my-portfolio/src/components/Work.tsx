@@ -1,12 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpotify } from "@fortawesome/free-brands-svg-icons";
 import { FaGithub, FaShareSquare } from "react-icons/fa";
-import { PiBowlFoodFill } from "react-icons/pi";
 import AOS, { AosEvent } from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import spotifyImage from "/src/assets/projectSpotify.png";
-import recipeImage from "/src/assets/recipeProject.png";
 import askEinsteinWeb from "/src/assets/ask-einstein-pic.png";
 import einsteinIcon from "/src/assets/einstein.png";
 import folderDriveIcon from "/src/assets/folder-picture-iconn.png";
