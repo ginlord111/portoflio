@@ -10,6 +10,7 @@ import einsteinIcon from "/src/assets/einstein.png";
 import folderDriveIcon from "/src/assets/folder-picture-iconn.png";
 import { AiFillYoutube } from "react-icons/ai";
 import folderDrivePage from "/src/assets/FolderDrivePage.png"
+import algortihmicOddysey from '/src/assets/algorithmic-oddysey-pic.png'
 const Work = () => {
   useEffect(() => {
     AOS.init({
@@ -187,6 +188,53 @@ const Work = () => {
               </a>
               <a
                 href="https://github.com/ginlord111/folder-drive"
+                target="_blank"
+              >
+                <p>
+                  Code <FaGithub className="inline-block" size={25} />
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Algorithmic Oddysey */}
+
+        <div className="flex flex-col-reverse w-[70%] items-center justify-center p-5  gap-[100px] mt-[300px] md:flex-row-reverse">
+          <div
+            className="flex items-center truncate lg:flex-[0.50]  justify-center relative"
+            data-aos="fade-left"
+          >
+            <img src={algortihmicOddysey} alt="none" className="" />
+          </div>
+          <div
+            className="flex flex-col  flex-[0.50] justify-between max-w-[400px] gap-5"
+            data-aos="fade-right"
+          >
+            <div className="flex gap-x-3">
+              <h2 className="text-[#738abe]  font-semibold h-full text-xl">
+            Algorithmic Odyssey
+              </h2>
+              {/* <img src={folderDriveIcon} alt="none" className="w-7 h-7" /> */}
+            </div>
+            <p className="text-base text-gray-400 font-semibold">
+            Developed 'Algorithmic Odyssey,' an educational platform designed to help students better understand algorithms in programming. The site 
+            features a forum for peer-to-peer discussion and a classroom module where teachers can assign activities, akin to Google Classroom
+            </p>
+            <div className="flex gap-[30px] text-white font-bold whitespace-nowrap">
+              <p>Next Js</p>
+              <p>Tailwind</p>
+              <p>Next Auth</p>
+              <p>Google Drive API</p>
+            </div>
+            <div className="flex gap-[30px] text-white font-bold text-lg cursor-pointer">
+              <a href="https://algorithmic-odyssey-web.vercel.app/" target="_blank">
+                <p>
+                  Live Demo <FaShareSquare className="inline-block" size={24} />
+                </p>
+              </a>
+              <a
+                href="https://github.com/ginlord111/algorithmic-odyssey-web"
                 target="_blank"
               >
                 <p>
