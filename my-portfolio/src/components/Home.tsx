@@ -14,7 +14,7 @@ const Home = () => {
             <ReactTyped
               strings={[
                 'Front-end Developer',
-                'Frontend Engineer',
+                'Front-end Engineer',
                 'React Developer',
                 'Vue Developer',
               ]}
@@ -27,11 +27,11 @@ const Home = () => {
         </div>
         <p className="text-[#8892b0] py-4 max-w-[700px] mt-[30px]">
           👋 Hello and welcome! I'm thrilled to have you explore my portfolio as
-          I embark on my journey as an aspiring Front End Developer. My name is
+          I embark on my journey as an Front End Developer. My name is
           Ronnie Nicandro, and I have a deep passion for crafting seamless user experience and
           user interfaces from the ground up. Within these virtual pages,
           you'll find a collection of projects, code snippets, and insights that
-          showcase my dedication to mastering both the front-end 
+          showcase my dedication to mastering both the front-end and back-end
           realms of web development.
         </p>
         <a href="#work">

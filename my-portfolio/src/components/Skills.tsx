@@ -12,6 +12,8 @@ import NextJS from '../assets/nextjs.png';
 import SupaBase from '../assets/supabase.png';
 import TypeScript from  '../assets/typescript.png';
 import Express from '../assets/express.png';
+import Vue  from '../assets/vue_logo.png';
+import Nuxt from   '../assets/nuxt_logo.png';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -82,6 +84,14 @@ const Skills = () => {
               <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
                   <img className='w-20 mx-auto' src={Express} alt="HTML icon" />
                   <p className='my-4'>EXPRESS JS</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={Vue} alt="HTML icon" />
+                  <p className='my-4'>Vue</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] bg-transparent hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={Nuxt} alt="HTML icon" />
+                  <p className='my-4'>Nuxt JS</p>
               </div>
           </div>
       </div>
