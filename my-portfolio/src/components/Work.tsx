@@ -41,7 +41,7 @@ const Work = () => {
         <h2 className="text-blue-400 font-semibold text-2xl">
           Projects that i develop
         </h2>
-        <div className="flex  flex-col md:flex-row  first-line:items-center justify-center p-5 mb-[300px]">
+        <div className="flex  flex-col md:flex-row  first-line:items-center justify-center gap-[100px] p-5 mb-[300px]">
           <div
             className="flex items-center  flex-[0.50] justify-center"
             data-aos="fade-right"
