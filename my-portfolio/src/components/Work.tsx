@@ -14,7 +14,7 @@ import algortihmicOddysey from '/src/assets/algorithmic-oddysey-pic.png'
 const Work = () => {
   useEffect(() => {
     AOS.init({
-      offset: 300,
+      offset: 500,
     });
     document.addEventListener("aos:in", handleAOSIn);
 
@@ -34,14 +34,14 @@ const Work = () => {
   };
 
   return (
-    <div className="w-full h-fit bg-[#0a192f] text-gray-300 z-[-1] " id="work">
+    <div className="lg:w-full  h-fit  text-gray-300 z-[-1] " id="work">
       {/*/SPOTIFY CLONE*/}
-      <div className="flex flex-col justify-center items-center w-full h-full gap-4">
+      <div className="flex flex-col justify-center items-center w-full   h-full gap-4">
         <h3 className="font-semibold text-xl text-white">Works</h3>
         <h2 className="text-blue-400 font-semibold text-2xl">
           Projects that i develop
         </h2>
-        <div className="flex  flex-col md:flex-row w-[70%] items-center justify-center p-5 gap-[100px] mb-[300px]">
+        <div className="flex  flex-col md:flex-row  first-line:items-center justify-center p-5 mb-[300px]">
           <div
             className="flex items-center  flex-[0.50] justify-center"
             data-aos="fade-right"
@@ -49,10 +49,10 @@ const Work = () => {
             <img src={spotifyImage} alt="none" className="w-full" />
           </div>
           <div
-            className="flex flex-col flex-[0.50] justify-between max-w-[400px] gap-5"
+            className="flex flex-col flex-[0.50] max-w-[400px] space-y-5"
             data-aos="fade-left"
           >
-            <h2 className="text-green-400 font-semibold h-full text-xl">
+            <h2 className="text-green-400 font-semibold  text-xl">
               Spotify Clone <FontAwesomeIcon icon={faSpotify} size="xl" />
             </h2>
             <p className="text-base text-gray-400 font-semibold">
@@ -92,7 +92,7 @@ const Work = () => {
   
 
         {/*/ASK-EINSTEIN */}
-        <div className="flex  md:flex-row flex-col-reverse w-[70%] items-center justify-center p-5  gap-[100px] mt-[300px]">
+        <div className="flex  md:flex-row flex-col-reverse items-center justify-center p-5  gap-[100px] mt-[300px]">
           <div
             className="flex items-center truncate lg:flex-[0.50]  justify-center relative"
             data-aos="fade-right"
@@ -148,7 +148,7 @@ const Work = () => {
         </div>
 
         {/* FOLDER DRIVE */}
-        <div className="flex flex-col-reverse w-[70%] items-center justify-center p-5  gap-[100px] mt-[300px] md:flex-row-reverse">
+        <div className="flex flex-col-reverse items-center justify-center p-5  gap-[100px] mt-[300px] md:flex-row-reverse">
           <div
             className="flex items-center truncate lg:flex-[0.50]  justify-center relative"
             data-aos="fade-left"
@@ -200,7 +200,7 @@ const Work = () => {
 
         {/* Algorithmic Oddysey */}
 
-        <div className="flex flex-col-reverse w-[70%] items-center justify-center p-5  gap-[100px] mt-[300px] md:flex-row-reverse">
+        <div className="flex flex-col-reverse overflow-hidden  items-center justify-center  p-5 gap-[100px] mt-[300px] md:flex-row-reverse">
           <div
             className="flex items-center truncate lg:flex-[0.50]  justify-center relative"
             data-aos="fade-left"
@@ -215,7 +215,6 @@ const Work = () => {
               <h2 className="text-[#738abe]  font-semibold h-full text-xl">
             Algorithmic Odyssey
               </h2>
-              {/* <img src={folderDriveIcon} alt="none" className="w-7 h-7" /> */}
             </div>
             <p className="text-base text-gray-400 font-semibold">
             Developed 'Algorithmic Odyssey,' an educational platform designed to help students better understand algorithms in programming. The site 
@@ -225,7 +224,7 @@ const Work = () => {
               <p>Next Js</p>
               <p>Tailwind</p>
               <p>Next Auth</p>
-              <p>Google Drive API</p>
+              <p>GDrive API</p>
             </div>
             <div className="flex gap-[30px] text-white font-bold text-lg cursor-pointer">
               <a href="https://algorithmic-odyssey-web.vercel.app/" target="_blank">

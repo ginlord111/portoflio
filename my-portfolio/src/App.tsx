@@ -7,7 +7,7 @@ import Contact from './components/Contact';
 import Work from  './components/Work';
 function App() {
   return (
-    <div className='App h-screen w-full'>
+    <div className='App h-screen w-screen overflow-x-clip '>
    <Navbar />
    <Home />
    <About />
